@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Lint, test, and build",
+      "type": "shell",
+      "command": "pnpm exec nx run-many --targets=lint,test,build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "panel": "shared",
+        "reveal": "always",
+        "focus": true
+      }
+    },
+    {
+      "label": "Serve",
+      "type": "shell",
+      "command": "pnpm exec nx run myapp:dev",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "panel": "shared",
+        "reveal": "always",
+        "focus": true
+      }
+    },
+    {
+      "label": "Clean",
+      "type": "shell",
+      "command": "git clean -dfx"
+    }
+  ]
+}

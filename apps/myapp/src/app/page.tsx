@@ -4,5 +4,5 @@ export default function Index() {
    *
    * Note: The corresponding styles are in the ./index.css file.
    */
-  return <div>Hello</div>;
+  return <div className="text-3xl font-bold underline">Hello</div>;
 }
