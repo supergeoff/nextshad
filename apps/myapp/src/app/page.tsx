@@ -1,4 +1,4 @@
-import { Button } from '@shared/ui';
+import { Button } from '@shared/ui/components/button';
 
 export default function Index() {
   /*
